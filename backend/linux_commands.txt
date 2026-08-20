@@ -1,0 +1,128 @@
+1                  Navigation
+pwd          # Show current directory
+ls           # List files
+ls -la       # List all files with details
+cd folder    # Change directory
+cd ..        # Go up one level
+cd ~         # Go to home directory
+tree         # Show directory tree
+
+2                  File Operations
+touch file.txt          # Create file
+cp file1 file2          # Copy file
+mv old.txt new.txt      # Rename/move file
+rm file.txt             # Delete file
+rm -r folder            # Delete folder
+mkdir myfolder          # Create folder
+rmdir myfolder          # Remove empty folder
+
+3                  Viewing files
+cat file.txt
+less file.txt
+more file.txt
+head file.txt
+tail file.txt
+tail -f logfile.log
+
+4                 Search
+find . -name "*.py"
+locate filename
+grep "word" file.txt
+grep -r "word" .
+which python
+whereis python
+
+5                Permissions
+chmod 755 file.sh
+chmod +x script.sh
+chown user file.txt
+chgrp group file.txt
+
+6               System Information
+uname -a
+hostname
+whoami
+id
+date
+uptime
+free -h
+df -h
+du -sh folder
+
+7             Processes
+ps
+ps aux
+top
+htop
+kill PID
+kill -9 PID
+pkill process_name
+
+8           Networking
+ping google.com
+curl https://example.com
+wget https://example.com/file.zip
+ip a
+ip route
+netstat -tulpn
+ss -tulpn
+
+9           Package Management(Ubuntu/Debian)
+sudo apt update
+sudo apt upgrade
+sudo apt install package
+sudo apt remove package
+
+10          Users
+who
+w
+adduser username
+passwd username
+su username
+sudo command
+
+11        Compression
+zip file.zip file.txt
+unzip file.zip
+tar -cvf archive.tar folder
+tar -xvf archive.tar
+tar -czvf archive.tar.gz folder
+
+12        Disk Management
+lsblk
+fdisk -l
+mount
+umount
+
+13        Environment variables
+env
+printenv
+export NAME=value
+echo $PATH
+
+14       Docker(Useful for FastAPI)
+docker ps
+docker images
+docker build -t app .
+docker run -p 8000:8000 app
+docker stop container_id
+docker rm container_id
+docker logs container_id
+docker compose up
+docker compose down
+
+15        Python Development
+python main.py
+python -m venv venv
+source venv/bin/activate
+pip install fastapi
+pip freeze > requirements.txt
+
+16        Powerful Shortcuts
+Ctrl+C    # Stop current process
+Ctrl+Z    # Suspend process
+Ctrl+D    # Exit shell
+Ctrl+L    # Clear screen
+Ctrl+R    # Search command history
+Tab       # Auto-complete
+history   # Show command history
